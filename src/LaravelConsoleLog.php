@@ -4,6 +4,15 @@ namespace Furqat\LaravelConsoleLog;
 
 use Illuminate\Contracts\Support\Arrayable;
 
+/**
+ * Class LaravelConsoleLog
+ *
+ * @method void log(...$arguments)
+ * @method void info(...$arguments)
+ * @method void warning(...$arguments)
+ * @method void error(...$arguments)
+ */
+
 class LaravelConsoleLog
 {
     protected CacheManager $cacheManager;
