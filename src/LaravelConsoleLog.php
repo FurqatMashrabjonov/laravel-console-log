@@ -12,7 +12,6 @@ use Illuminate\Contracts\Support\Arrayable;
  * @method void warning(...$arguments)
  * @method void error(...$arguments)
  */
-
 class LaravelConsoleLog
 {
     protected CacheManager $cacheManager;
