@@ -1,14 +1,12 @@
 <p align="center">
-<img src="docs/code-example.png" alt="Code Example">
-<img src="docs/output-example.png" alt="Code Example">
+<img src="docs/code-example.png" width="600" alt="Code Example">
+<img src="docs/output-example.png" width="800" alt="Code Example">
 </p>
 
 
 # Laravel Console Log
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/furqat/laravel-console-log.svg?style=flat-square)](https://packagist.org/packages/furqat/laravel-console-log)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/furqat/laravel-console-log/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/furqat/laravel-console-log/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/furqat/laravel-console-log/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/furqat/laravel-console-log/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/furqat/laravel-console-log.svg?style=flat-square)](https://packagist.org/packages/furqat/laravel-console-log)
 
 ## Installation
@@ -19,18 +17,29 @@ You can install the package via composer:
 composer require furqat/laravel-console-log
 ```
 
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-console-log-config"
-```
-
 ## Usage
 
 ```php
-console()->log('Your message');
+class HomeController extends Controller
+{
+    public function index()
+    {
+
+        $users = User::all();
+        
+        //it will show the count of users in the console of browser
+        console()->info('The count of users is: ' . $users->count());
+
+        return view('users', compact($users));
+    }
+}
 ```
+
+## How It Works
+
+When you call console()->log(...$args) in your Laravel application, the package stores the logged messages and values in the cache. This allows the logs to be easily accessed and managed without cluttering the terminal or log files.
+
+To view these logs, simply open any view in your browser. The package streams the cached logs to the frontend in real-time and show logs in browser's console using console.log(), providing a clear and organized view of all your log entries. This makes it easy for developers to monitor and debug their applications without interrupting their workflow.
 
 ## Testing
 
@@ -41,14 +50,6 @@ composer test
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
 ## Credits
 
