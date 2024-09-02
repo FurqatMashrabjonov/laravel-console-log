@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Furqat\LaravelConsoleLog\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelConsoleLogCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-console-log';
 
     public $description = 'My command';
 
