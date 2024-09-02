@@ -6,6 +6,8 @@
 
 # Laravel Console Log
 
+This package allows backend developers to effortlessly output messages and values in the browser's console via PHP.
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/furqat/laravel-console-log.svg?style=flat-square)](https://packagist.org/packages/furqat/laravel-console-log)
 [![Total Downloads](https://img.shields.io/packagist/dt/furqat/laravel-console-log.svg?style=flat-square)](https://packagist.org/packages/furqat/laravel-console-log)
 
