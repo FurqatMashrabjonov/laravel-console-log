@@ -33,6 +33,9 @@
         "phpstan/phpstan-phpunit": "^1.3"
     },
     "autoload": {
+        "files": [
+            "src/Helpers/helpers.php"
+        ],
         "psr-4": {
             "Furqat\\LaravelConsoleLog\\": "src/",
             "Furqat\\LaravelConsoleLog\\Database\\Factories\\": "database/factories/"
