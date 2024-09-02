@@ -15,6 +15,7 @@ class LaravelConsoleLogServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('laravel-console-log')
+            ->hasRoute('web')
             ->hasConfigFile()
             ->hasViews();
 

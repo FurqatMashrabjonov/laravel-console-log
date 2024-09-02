@@ -1,4 +1,10 @@
-# This is my package laravel-console-log
+<p align="center">
+<img src="docs/code-example.png" alt="Code Example">
+<img src="docs/output-example.png" alt="Code Example">
+</p>
+
+
+# Laravel Console Log
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/furqat/laravel-console-log.svg?style=flat-square)](https://packagist.org/packages/furqat/laravel-console-log)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/furqat/laravel-console-log/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/furqat/laravel-console-log/actions?query=workflow%3Arun-tests+branch%3Amain)

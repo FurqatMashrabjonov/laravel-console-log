@@ -1,7 +1,7 @@
 @if(config('console-log.enabled') && config('app.env')!=='production')
     <script>
         if (window.EventSource !== undefined) {
-            const es = new EventSource('/stream');
+            const es = new EventSource('{{route('laravel-console-log')}}');
 
             // Listen for incoming messages
             es.onmessage = function (event) {
