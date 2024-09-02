@@ -2,7 +2,7 @@
 
 use Furqat\LaravelConsoleLog\LaravelConsoleLog;
 
-if (!function_exists('console')) {
+if (! function_exists('console')) {
 
     function console()
     {
