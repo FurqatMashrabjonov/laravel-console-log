@@ -2,9 +2,9 @@
 
 namespace Furqat\LaravelConsoleLog\Tests;
 
+use Furqat\LaravelConsoleLog\LaravelConsoleLogServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Furqat\LaravelConsoleLog\LaravelConsoleLogServiceProvider;
 
 class TestCase extends Orchestra
 {
