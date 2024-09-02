@@ -2,7 +2,7 @@
 
 namespace Furqat\LaravelConsoleLog\Http\Controllers;
 
-use App\Package\CacheManager;
+use Furqat\LaravelConsoleLog\CacheManager;
 use Furqat\LaravelConsoleLog\Printer;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
