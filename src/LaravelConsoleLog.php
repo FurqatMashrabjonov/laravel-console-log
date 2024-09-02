@@ -2,7 +2,6 @@
 
 namespace Furqat\LaravelConsoleLog;
 
-use App\Package\CacheManager;
 use Illuminate\Contracts\Support\Arrayable;
 
 class LaravelConsoleLog
